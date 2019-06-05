@@ -275,7 +275,7 @@ Echo "Override internal and external hostnames"
 Echo "setenv MDCE_OVERRIDE_INTERNAL_HOSTNAME=$InternalHostname"
 Echo "setenv MDCE_OVERRIDE_EXTERNAL_HOSTNAME=$ExternalIP"
 [Environment]::SetEnvironmentVariable("MDCE_OVERRIDE_INTERNAL_HOSTNAME", $InternalHostname, "Machine")
-[Environment]::SetEnvironmentVariable("MDCE_OVERRIDE_EXTERNAL_HOSTNAME", $ExternalIP, "Machine")
+[Environment]::SetEnvironmentVariable("MDCE_OVERRIDE_EXTERNAL_HOSTNAME", $InternalHostname, "Machine")
 
 #******************************************************************************
 # Configure external storage
